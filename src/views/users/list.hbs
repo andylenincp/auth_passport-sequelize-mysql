@@ -1,0 +1,24 @@
+<div class="container p-4">
+  <table class="table table-striped text-center">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">username</th>
+        <th scope="col">password</th>
+        <th>created</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each users}}
+      <tr>
+        <th scope="row">{{id}}</th>
+        <td>{{name}}</td>
+        <td>{{username}}</td>
+        <td>{{password}}</td>
+        <td>{{createdAt}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
