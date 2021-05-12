@@ -5,5 +5,9 @@ const passport = require('passport');
 const { isLoggedIn } = require('../lib/auth');
 
 router.get('/users', isLoggedIn, userController.getUsers);
+router.get('/users/add', isLoggedIn, (req, res) => {
+    res.render('users/add');
+});
+router.post('/users/add', userController.createUser);
 
 module.exports = router;
