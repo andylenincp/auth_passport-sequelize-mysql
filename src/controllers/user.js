@@ -22,4 +22,10 @@ const createUser = async (req, res) => {
     }
 };
 
-module.exports = { getUsers, createUser };
+const deleteUser = async (req, res) => {
+    const { id } = req.params;
+    await User.destroy({ where: { id } });
+    res.redirect('/users');
+};
+
+module.exports = { getUsers, createUser, deleteUser };

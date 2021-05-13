@@ -9,5 +9,6 @@ router.get('/users/add', isLoggedIn, (req, res) => {
     res.render('users/add');
 });
 router.post('/users/add', userController.createUser);
+router.get('/users/delete/:id', userController.deleteUser);
 
 module.exports = router;
