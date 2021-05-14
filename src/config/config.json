@@ -1,9 +1,9 @@
 {
     "development": {
-      "username": "root",
-      "password": null,
-      "database": "passport-sequelize-mysql",
-      "host": "localhost",
+      "username": "5JivD3Qzzl",
+      "password": "PpKrhsy6Mh",
+      "database": "5JivD3Qzzl",
+      "host": "remotemysql.com",
       "dialect": "mysql"
     },
     "test": {
